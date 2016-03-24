@@ -15,12 +15,9 @@ font-family: bebas;
 src :url(fonts/bebas.otf);
 }
 
-
 header {
-	padding: 2.5%;
   background-color: black;
   border-bottom: thick solid limegreen;
-  text-align: center;
 	margin: -10px -10px 2% -10px;
 }
 div , div p  {
@@ -37,28 +34,63 @@ font-family: bebas;
 a:link {
     text-decoration: none;
 }
-
-
-.logo{
+.logo, .logo_m{
   background-image: url(htl.png);
   margin: auto;
+  float: left;
   background-size: 100% 100%;
+}
+.logo{
+
   padding-top: 5%;
   padding-bottom: 5%;
   width:32.5%;
 }
-
+.logo_m{
+  padding-top: 0;
+  padding-bottom: 0;
+  width:0;
+  float: left;
+}
 @media screen and (max-width: 750px ) {
-  .logo{
+  .logo_m{
     padding-top: 15%;
     padding-bottom: 15%;
-    width:80%;
+    width:100%;
+    border-bottom: thick solid limegreen;
+  }
+  .logo{
+    padding-top: 0%;
+    padding-bottom: 50%;
+    width:0%;
   }
 
 }
-
-.logo:hover{
+.logo:hover , .logo_m:hover{
   background-image: url(htl3.png);
+}
+.item_menu {
+  width: 16.8%;
+  height: auto;
+  padding: 0;
+  margin: auto;
+  align-content: center;
+  float: left;
+  overflow: visible;
+}
+
+@media screen and (max-width: 750px ) {
+  .item_menu {
+    width: 100%;
+    overflow-y: hidden;
+    margin: auto;
+    height: auto;
+    float: right;
+    border-top:  thick solid limegreen;
+    border-bottom: thick solid limegreen;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*________________________________________________________________*/
@@ -87,7 +119,7 @@ margin-bottom: 2%;
 }
 @media screen and (max-width: 750px ) {
   .mainpanel h1 {
-font-size: 500%;
+font-size: 450%;
   }
 }
 
@@ -114,10 +146,12 @@ float:left;
 overflow: visible;
 /*background-color: blue;*/
 }
+
 @media screen and (max-width: 750px ) {
   .coluna {
   width: 100%;
   }
+
 }
 
 
